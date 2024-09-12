@@ -1,0 +1,428 @@
+body,html {
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow:auto;
+}
+/*general page styles*/
+p {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: inherit;
+    font-weight:inherit;
+}
+
+a {
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    text-decoration:underline;
+    margin:0, auto;
+    line-height:1em;
+}
+
+a:hover {
+    font-size: 1.02em;
+    transition:.3s ease;
+}
+.greyBlock{
+    background-color:#eeeeee;
+}
+
+/*navbar*/
+.navbar .column-layout{
+    display:flex;
+}
+.navbar .main-column{
+    flex:3
+}
+.navbar .sidebar-one{
+    flex:1
+}
+.navbar {
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background: #00000077;
+    border: none;
+    font-size: 30px;
+    font-weight: 100;
+}
+.navbar .container{
+    padding:0;
+    margin:0;
+}
+.navbar a {
+    padding: 1.2em;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    font-size: 0.8em;
+    color: #888888;
+}
+.navbar .current-page {
+    text-decoration: underline;
+    font-size: 0.6em;
+    color: white;
+}
+
+/*startup page top section*/
+#brandedText{
+    font-family: cursive, 'Brush Script MT';
+    font-style:italic;
+
+}
+.header-font {
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 100;
+}
+
+.startup-img {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#headerTextbox {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    flex: 1;
+    width: 100%;
+}
+#startupImgFilter {
+    position: absolute;
+    padding: 10px;
+    flex: 1;
+    width: 100%;
+    height:100%;
+    background: linear-gradient(to top, black, #00000000, black)
+}
+#startupImg{
+    flex:1;
+    padding:0;
+    margin:0;
+}
+
+/*quick link icon buttons*/
+.icon-container {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    color: #888888;
+    border-block-color: #888888, #888888;
+}
+.icon-container button {
+    flex: 1;
+    margin: 30px;
+    width: 20%;
+    height: 6em;
+    background:#00000000;
+}
+.icon-container p{
+    text-align: center;
+}
+/*riverfront lux text block*/
+article {
+    width: 90%;
+    padding: 5em;
+    margin: auto;
+}
+#riverfrontArticle p {
+    text-align: center;
+}
+#riverfrontArticle h3{
+    text-align: center;
+}
+
+/*Accommodation Carousel*/
+#carouselHeader{
+    text-align:center;
+}
+.carousel-caption {
+    background-color: #00000077;
+    color: white;
+}
+
+.carousel-caption p{
+    color: white;
+    text-align:center;
+    padding:1em;
+}
+
+
+/*Featured Offers Grid Tiles*/
+
+#featuredOffersHeading {
+    display: inline;
+}
+#allOffersLink {
+    display: inline;
+    text-align: right;
+    float:right;
+}
+#featuredOffersGrid .tiles col {
+    position: relative;
+}
+
+#featuredOffersGrid .tiles div:nth-child(n):hover .imgOverlay {
+    opacity: 1;
+    height: 90%;
+}
+#featuredOffersGrid .tiles div:nth-child(n):hover .imgCaption {
+    opacity: 1;
+}
+#featuredOffersGrid .tiles div:nth-child(n):hover img {
+    filter: brightness(0.4) blur(3px);
+}
+#featuredOffersGrid .tiles div:nth-child(n):hover h5 {
+    opacity: 0;
+}
+
+#featuredOffersGrid h5 {
+    color: white;
+    background-color:#00000033;
+    font-weight:bold;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .2s ease;
+    opacity: 1;
+}
+
+#featuredOffersGrid img {
+    margin: 10px auto;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    
+}
+#featuredOffersGrid .imgCaption {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    opacity: 0;
+}
+#featuredOffersGrid .imgOverlay {
+    padding:0 0;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 0;
+    overflow: hidden;
+    width: 90%;
+    height: 0;
+    transition: .5s ease;
+}
+
+/*vertical image carousel*/
+#verticalCarousel h2{
+    text-align:center;
+}
+#verticalCarousel .carouselItem {
+    display: flex;
+}
+#verticalCarousel img {
+    flex: 1;
+    width:50%;
+    height:auto;
+}
+#verticalCarousel .imgCaption {
+    flex: 1;
+    width: 40%;
+    height: auto;
+    position: relative;
+}
+#verticalCarousel .text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width:70%;
+    transform: translate(0, -50%);
+    text-align:left;
+}
+
+#verticalCarousel .controls {
+    text-align:center;
+    text-decoration:none;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0,-50%);
+    font-size: 2em;
+}
+#verticalCarousel h3{
+    float:left;
+}
+#verticalCarouselText {
+    float: left;
+}
+#verticalCarouselLink{
+    float: left;
+}
+#verticalCarousel .controls a {
+    text-decoration: none;
+    font-weight: 300;
+    text-align: left;
+}
+#verticalCarousel .controls a:hover {
+    text-decoration: none;
+    font-weight:800;
+}
+#verticalCarousel #disabledControl {
+    color: #aaaaaa;
+    font-weight: 100;
+    text-align:center;
+}
+
+/*landmark article*/
+#landmarkArticle p,h3 {
+    font-weight:100;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+}
+#landmarkArticle img {
+    margin: 0 10%;
+    width:80%;
+    height:auto ;
+}
+
+
+/*quote image block*/
+
+#quoteImgBlock{
+    display:flex;
+    padding:0;
+    margin:auto;
+    position:relative;
+}
+#quoteImgBlock img{
+    flex:1;
+    padding:0;
+    margin:auto;
+}
+#quoteImgBlock .imgCaption {
+    background-color: #000000cc;
+    background: linear-gradient(to bottom, #000000ff, #000000ff, #00000000);
+    position: absolute;
+    flex: 1;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+#quoteImgBlock #quote, #quote2 {
+    padding: 5%;
+    text-align: center;
+    font-weight: 100;
+    font-style:italic;
+    font-size: 58px;
+    line-height:1.2em;
+    letter-spacing:0.02em;
+    color: white;
+    margin: auto;
+    width: 85%;
+}
+
+#quoteImgBlock #credit {
+   display:flex;
+   margin:auto;
+   width:30%;
+}
+#quoteImgBlock #creditName {
+    flex: 1;
+    padding: 0 3px;
+    text-align: right;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+}
+#quoteImgBlock #creditRole {
+    flex: 1;
+    padding: 0 3px;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 14px;
+}
+
+/*footer*/
+footer{
+    background-color:black;
+    padding: 3% 10%;
+}
+#socialLinks a:hover{
+    color:#999999;
+}
+footer img{
+    width:10%;
+    height:auto;
+    margin:5% 45%;
+}
+
+#footerGrid a{
+    color:white;
+    text-decoration:none;
+    line-height:2em;
+    
+}
+#footerGrid a:hover {
+    color: #999999;
+}
+#footerGrid h5 {
+    color: white;
+    font-style: italic;
+    font-size:1.2em;
+    font-weight:lighter;
+}
+#footerGrid ul{
+    list-style-type:none;
+    margin:0;
+    padding:0
+}
+#footerGrid{
+    margin:5% 0;
+}
+
+footer .fa{
+    color:white;
+    margin: 10px;
+    padding:0;
+    font-size:20px;
+    text-decoration:none;
+}
+#legalLinks a{
+    color:#aaaaaa;
+    padding:0 10px;
+    text-align:left;
+    text-decoration:none;
+}
+#legalLinks a:hover {
+    color: #777777;
+}
+#legalLinks p {
+    color: #666666;
+    padding:10px;
+}

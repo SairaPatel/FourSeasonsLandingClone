@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Four Seasons Hotel New Orleans</title>
+
+    <!--link bootstrap css with cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- linls bootstrap icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- link bootstrap js with cdn and jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <!-- Custom styles (this allows you to overide bootstrap style properties like colours, fonts, etc...) -->
+    <link rel="stylesheet" href="website.css">
+
+</head>
+<body>
+    <!--Top nav bar and header-->
+    <nav class="navbar navbar-default navbar-fixed-top ">
+        <div class="column-layout">
+            <!--logo-->
+            <div class="sidebar-one">
+                <img src="images/logo.png" alt="Four Seasons Logo" />
+            </div>
+            <!--navs and heading-->
+            <div class="main-column">
+                <div class="container">
+                    <h1 class="header-font">FOUR SEASONS HOTEL NEW ORLEANS</h1>
+                    <a class="current-page" href="website.html">HOTEL OVERVIEW</a>
+                    <a href="#l">ACCOMODATIONS</a>
+                    <a href="#">GALLARY</a>
+                    <a href="#">WEDDINGS</a>
+                    <a href="#">OFFERS</a>
+                    <a href="#">SPA</a>
+                    <a href="#">LOCATION</a>
+                    <a href="#">CONTACT US</a>
+                    <a href="#">DINING</a>
+
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <!--Startup page image and header section-->
+    <section id="startupSection" class="startup-img container-fluid">
+        <img id="startupImg" src="images/barImg1.jpg" />
+        <div id="startupImgFilter"></div>
+        <div id="headerTextbox" class="header-font">
+            <br /> <br />
+            <h5 id="brandedText">Four Seasons</h5>
+            <h1>NEW ORLEANS</h1>
+            <h5>2 CANAL STREET, NEW ORLEANSLOUISIANA, 70130 U.S.A</h5>
+            <h5>
+                +1 (504) 434-5100
+                <a>CONTACT US</a>
+                <a href="">LOCATION</a>
+
+            </h5>
+
+        </div>
+    </section>
+
+
+    <br />
+    <br />
+    <br />
+
+
+    <!--Quick access link icons-->
+    <section class="container-fluid icon-container">
+        <button>
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <p>Location</p>
+
+        </button>
+        <button>
+            <span class="glyphicon glyphicon-bed"></span>
+            <p>Accommodation</p>
+        </button>
+        <button>
+            <span class="glyphicon glyphicon-picture"></span>
+            <p>Gallery</p>
+        </button>
+        <button>
+            <span class="glyphicon glyphicon-cutlery"></span>
+            <p>Dining</p>
+        </button>
+        <button>
+            <span class="glyphicon glyphicon-leaf"></span>
+            <p>Spa</p>
+        </button>
+    </section>
+
+    <!--Riverfront article-->
+    <article id="riverfrontArticle" class="greyBlock">
+        <h3>RIVERFRONT LUXURY IN ONE OF AMERICA'S MOST CELEBRATED CITIES</h3>
+        <p>
+            Unlocking the authentic New Orleans, Four Seasons invites you to our landmark tower � a heritage
+            icon with a central downtown location on the banks of the Mississippi River.
+            Dine on innovative Louisiana cuisine, relax by our resort-style pool, and plan
+            your own private event at our 34th-floor observation deck boasting NOLA�s best views.
+        </p>
+    </article>
+
+
+    <!--Rooms carousel-->
+    <section class="container">
+        <h2 id="carouselHeader">ACCOMMODATIONS</h2>
+        <div id="roomCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#roomCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#roomCarousel" data-slide-to="1"></li>
+                <li data-target="#roomCarousel" data-slide-to="2"></li>
+                <li data-target="#roomCarousel" data-slide-to="3"></li>
+                <li data-target="#roomCarousel" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/roomImg1.jpg" alt="Los Angeles" style="width:100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>PREMIER RIVER-VIEW ROOM</h4>
+                        <p>
+                            With floor-to-ceiling views of the Mississippi, these larger guest rooms provide a light,
+                            fresh and luxurious sanctuary. After a day of exploring New Orleans, lounge in the comfortable
+                            sitting area or unwind in the oval tub � fully open to the bedroom.
+                        </p>
+                        <a href="accommodations.html">Details</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/roomImg2.jpg" alt="Chicago" style="width:100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>CITY-VIEW EXECUTIVE SUITE</h4>
+                        <p>
+                            These thoughtfully designed suites provide a spacious living
+                            and dining area for entertaining friends or relaxing on your own.
+                            The large corner-view bedroom includes a walk-in closet with a floor-to-ceiling window.
+                        </p>
+                        <a href="accommodations.html">Details</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/roomImg3.jpg" alt="New york" style="width:100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>PREMIER RIVER-VIEW ROOM</h4>
+                        <p>
+                            With floor-to-ceiling views of the Mississippi, these larger guest rooms provide a light,
+                            fresh and luxurious sanctuary. After a day of exploring New Orleans, lounge in the comfortable
+                            sitting area or unwind in the oval tub � fully open to the bedroom.
+                        </p>
+                        <a href="accommodations.html">Details</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/roomImg3.jpg" alt="New york" style="width:100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>RIVER-VIEW ONE-BEDROOM SUITE</h4>
+                        <p>
+                            Impressive for entertaining, these Mississippi-view
+                            suites feature an extra-large living and dining area, complete with wet
+                            bar and a convenient powder room for guests. A solid door
+                            provides privacy for the corner-view bedroom and sunlit ensuite bath.
+                        </p>
+                        <a href="accommodations.html">Details</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/roomImg3.jpg" alt="New york" style="width:100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>DELUXE RIVER-VIEW ROOM</h4>
+                        <p>
+                            Relax on your chaise by the window and watch the boats on the Mississippi.
+                            Capturing the modern spirit of New Orleans, these spacious guest
+                            rooms are ideal for both business and leisure.
+                        </p>
+                        <a href="accommodations.html">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#roomCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#roomCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+
+    <br />
+    <br />
+
+    <!--Featured offers grid tiles -->
+    <section id="featuredOffersGrid" class="container">
+        <!--header and link-->
+        <div id="featuredOffersHeader" class="row header">
+            <h3 id="featuredOffersHeading">
+                FEATURED OFFERS
+                
+            </h3>
+            <h3 id="allOffersLink" >
+                <a href="#">ALL OFFERS</a>
+            </h3>
+
+        </div>
+        <!--img/button tiles-->
+        <div class="row tiles">
+            <div class="col col-sm-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img src="images/hotelImg1.jpg" class="img-fluid" />
+                    <div class="imgOverlay">
+                        <div class="imgCaption">
+                            <h4>INTRODUCTOTY OFFER - 20% OFF</h4>
+                            <p>Get to know our brand-new hotel with 20% off our Room Rate.</p>
+                            <h4>VIEW OFFER &rarr;</h4>
+                        </div>
+                    </div>
+                    <h5>VIEW OFFER</h5>
+                </a>
+            </div>
+            <div class="col col-sm-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img src="images/hotelImg2.jpg" class="img-fluid" />
+                    <div class="imgOverlay">
+                        <div class="imgCaption">
+                            <h4>A STREETCAR EXPERIENCE TO BE DESIRED</h4>
+                            <p>Experience a provate streetcar ride with a guided tour, a professional photographer ...</p>
+                            <h4>VIEW OFFER &rarr;</h4>
+                        </div>
+                    </div>
+                    <h5>VIEW OFFER</h5>
+                </a>
+            </div>
+            <div class="col col-sm-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img src="images/hallImg1.jpg" class="img-fluid" />
+                    <div class="imgOverlay">
+                        <div class="imgCaption">
+                            <h4>BED AND BREAKFAST</h4>
+                            <p>Start each day with a signature Four Seasons breakfast</p>
+                            <h4>VIEW OFFER &rarr;</h4>
+                        </div>
+                    </div>
+                    <h5>VIEW OFFER</h5>
+                </a>
+            </div>
+            <div class="col col-sm-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img src="images/roomImg1.jpg" class="img-fluid" />
+                    <div class="imgOverlay">
+                        <div class="imgCaption">
+                            <h4>STAY LONGER - THIRD NIGHT FREE</h4>
+                            <p>Receive a complimentary third night.</p>
+                            <h4>VIEW OFFER &rarr;</h4>
+                        </div>
+                    </div>
+                    <h5>VIEW OFFER</h5>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <br />
+    <br />
+
+    <!--verticle manual carousel-->
+    <section id="verticalCarousel">
+        <h2>NEW ORLEANS BY FOUR SEASONS</h2>
+        <div class="carouselItem greyBlock" id="carouselItem1">
+            <img src="images/jazzClubImg1.jpg" />
+            <div class="imgCaption">
+                <div class="text">
+                    <h3 >YOUR OWN PRIVATE JAZZ CLUB</h3>
+                    <p id="verticalCarouselText">
+                        Ask our Four Seasons concierge team to plan a private concert for you and your
+                        friends at Preservation Hall, the legendary jazz venue in the French Quarter. We
+                        can even arrange a one-on-one music lesson with a local jazz legend.
+                    </p>
+                    <a id="verticalCarouselLink" href="#">DETAILS</a>
+                </div>
+                <div class="controls">
+                    <p id="disabledControl">&uArr;</p>
+                    <p>1 of 3</p>
+                    <a href="#carouselItem2">&dArr;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carouselItem greyBlock" id="carouselItem2">
+            <img src="images/streetcarImg1.jpg" />
+            <div class="imgCaption">
+                <div class="text">
+                    <h3>STREETCAR TOUR OF THE GARDEN DISTRICT</h3>
+                    <p id="verticalCarouselText">
+                        Streetcars have been essential to New Orleans since the 1830s � and they�re
+                        the best way to explore the city�s character. Let Four Seasons arrange your
+                        own private streetcar ride through the picturesque Garden District, lined
+                        with opulent mansions. A local historian will share fascinating stories about
+                        streetcars and the secrets of famous landmarks.
+                    </p>
+                </div>
+                <div class="controls">
+                    <a href="#carouselItem1">&uArr;</a>
+                    <p>2 of 3</p>
+                    <a href="#carouselItem3">&dArr;</a>
+                </div>
+            </div>
+        </div>
+        <div class="carouselItem greyBlock" id="carouselItem3">
+            <img src="images/cookImg1.jpg" />
+            <div class="imgCaption">
+                <div class="text">
+                    <h3>THE AUTHENTIC TASTE OF NEW ORLEANS</h3>
+                    <p id="verticalCarouselText">
+                        New Orleans is famous for extraordinary food. Even the top chefs are accessible,
+                        reflecting the city�s friendly, small-town vibe. For an unforgettable night,
+                        our Four Seasons Concierge will introduce you to one of the city�s most renowned
+                        chefs. You�ll start the evening together by visiting their personal favourite bar,
+                        then follow up with a custom-prepared dinner in their own restaurant.
+                    </p>
+                </div>
+                <div class="controls">
+                    <a href="#carouselItem2">&uArr;</a>
+                    <p>3 of 3</p>
+                    <p id="disabledControl">&dArr;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br />
+    <br />
+
+    <!--Landmark article and img-->
+    <article id="landmarkArticle">
+        <h3>STAY IN A NEW ORLEANS LANDMARK</h3>
+        <br />
+        <p>
+            Four Seasons Hotel New Orleans welcomes you to our iconic 34-storey tower, completed in
+            1968 to celebrate the 250th anniversary of the city�s founding. Designed by legendary
+            modernist architect Edward Durell Stone, the building was originally the World Trade Center
+            and International Trade Mart. Now recognized on the National Register of Historic Places,
+            this landmark tower has been painstakingly restored and enhanced to become a five-star hotel
+            � celebrating the city�s spirit of survival and rebirth.
+        </p>
+        <br />
+        <img src="images/landmarkImg1.jpg" />
+    </article>
+
+    <br />
+    <br />
+
+    <!--manager quote over img-->
+    <container id="quoteImgBlock">
+        <img src="images/bandImg1.jpg" />
+        <div class="imgCaption">
+            <p id="quote" class="brandedText">
+                "New Orleans offers so much more than anyone expects.<br/>
+                Whether you�re a first-time guest or a regular visitor
+                to the city, our brilliant Four Seasons team will find special ways to surprise you."
+            </p>
+            <div id="credit">
+                <p id="creditName">MALI CAROW </p>
+                <p id="creditRole">GENERAL MANAGER</p>
+            </div>
+        </div>
+    </container>
+
+    
+    <br />
+    <br />
+
+    <!--footer-->
+    <footer>
+        <img src="images/logoWithName.png" />
+        <!--site links-->
+        <section id="footerGrid">
+            <div class="row">
+                <div class="col col-sm-12 col-md-6 col-lg-3">
+                    <h5 class="brandedText">About</h5>
+                    <ul>
+                        <li>
+                        <a href="#">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="#">CARREERS</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-sm-12 col-md-6 col-lg-3">
+                    <h5 class="brandedText">Reservations</h5>
+                    <ul>
+                        <li>
+                            <a href="#">REQUEST AN INVOICE</a>
+                        </li>
+                        <li>
+                            <a href="#">FIND A RESERVATION</a>
+                        </li>
+                        <li>
+                            <a href="#">EMAIL PREFERENCES</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-sm-12 col-md-6 col-lg-3">
+                    <h5 class="brandedText">News</h5>
+                    <ul>
+                        <li>
+                            <a href="#">PRESS ROOM</a>
+                        </li>
+                        <li>
+                            <a href="#">NEW OPENINGS</a>
+                        </li>
+                        <li>
+                            <a href="#">MAGAZINE</a>
+                        </li>
+                        <li>
+                            <a href="#">NEWSLETTER</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-sm-12 col-md-6 col-lg-3">
+                    <h5 class="brandedText">More</h5>
+                    <ul>
+                        <li>
+                            <a href="#">EXTRAORDINARY EXPERIENCES</a>
+                        </li>
+                        <li>
+                            <a href="#">RESIDENCES</a>
+                        </li>
+                        <li>
+                            <a href="#">PRIVATE RETREATS</a>
+                        </li>
+                        <li>
+                            <a href="#">GIFT CARDS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--social media links-->
+        <section id="socialLinks">
+            <a href="https://twitter.com/FourSeasons" class="fa fa-twitter"></a>
+            <a href="https://facebook.com/FourSeasons" class="fa fa-facebook-f"></a>
+            <a href="https://instagram.com/FourSeasons" class="fa fa-instagram"></a>
+            <a href="https://youtube.com/FourSeasons" class="fa fa-youtube"></a>
+        </section>
+        <hr>
+        <!--legal links-->
+        <section id="legalLinks">
+            <a href="#">Legal Notice &bull;</a>
+            <a href="#">Privacy Policy &bull;</a>
+            <a href="#">Cookie Preferences &bull;</a>
+            <a href="#">Accessibility Policy &bull;</a>
+            <br />
+            <p>�Four Seasons Hotels Limited 1997-2021. All Rights Reserved.</p>
+        </section>
+        
+    </footer>
+</body>
+</html>
